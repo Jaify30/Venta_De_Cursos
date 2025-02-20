@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 35px;
+}
+
+.header-name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #CCA43B;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #CCA43B;
+    font-size: 20px;
+}
+.dropdown {
+    position: relative; /* Permite posicionar el menú desplegable dentro del contenedor */
+}
+
+.dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #E5E5E5;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    opacity: 0; /* Invisibilidad inicial para evitar errores de renderizado */
+    transition: opacity 0.3s ease-in-out; /* Transición suave al mostrar */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px; /* Espaciado interior de cada elemento */
+}
+
+.dropdown-menu li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #CCA43B; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    display: block; /* Hace que los enlaces ocupen toda la fila */
+}
+
+.dropdown-menu li:hover {
+    background-color: #242F40; /* Color de fondo al pasar el ratón */
+    color: #E5E5E5; /* Color del texto al pasar el ratón */
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Hace que el menú sea visible al pasar el ratón sobre el contenedor */
+    display: block; /* Muestra el menú al pasar el ratón sobre el contenedor */
+}
+
+footer{
+    background-color: #E5E5E5;
+}
+
+.redes a {
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    font-size: 2rem; /* Tamaño de los íconos */
+    color: #333; /* Color de los íconos */
+    text-decoration: none; /* Elimina subrayado */
+}
+  
+.redes a:hover {
+    color: #0077b5; /* Cambia el color al pasar el mouse */  
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-bottom{
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 parte para filtros, 3 partes para cursos */
+    gap: 20px;
+    padding: 20px;
+}
+
+.cursos-cards{
+    display: grid;
+    flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta según el ancho disponible */
+  gap: 100px;
+}
+
+.message{
+    margin: 100px;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-right: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #242F40;
+}
+
+.message h1{
+    color: #CCA43B;
+}
+
+.message p{
+    color: #E5E5E5;
+    font-size: 20px;
+}
+
+.filtros{
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-left: -20px;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    height: 70%;
+}
+
+.filtros .buscador input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 17px;
+}
+
+.filtros .buscador button{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #333;
+    background-color: #CCA43B;
+    color: #E5E5E5;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filtros .buscador button:active{
+    transform: scale(0.95); /* Reduce el tamaño ligeramente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Cambia la sombra */
+}
+
+input[type="checkbox"] {
+    border: 10px;
+    accent-color: #CCA43B; /* Cambia el color del checkbox */
+}
+
+h2{
+    margin-top: 20px;
+}

@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 35px;
+}
+
+.header-name{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #CCA43B;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.header-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #CCA43B;
+    font-size: 20px;
+}
+
+.welcome-container {
+    display: flex; /* Activa el modelo de caja flexible */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    gap: 20px; /* Espaciado entre columnas */
+    padding: 20px; /* Añade espacio interior al contenedor */
+    margin: 50px 100px; /* Márgenes superiores e inferiores (50px), laterales (100px) */
+    background-color: #242F40;
+    border-radius: 50px;
+    max-height: 900px;
+}
+
+.message-welcome {
+    display: grid; /* Usa grid para separar el mensaje y la frase motivacional */
+    grid-template-rows: auto auto; /* Dos filas: mensaje de bienvenida y frase */
+    gap: 20px; /* Espaciado entre las filas */
+    padding-left: 100px;
+    flex: 1; /* Ocupa una proporción igual de espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo de esta columna */
+}
+
+.cursos-welcome {
+    padding-bottom: 20px; /* Espacio adicional bajo el mensaje principal */
+}
+
+.frase {
+    margin-top: 20px; /* Espacio superior adicional */
+    text-align: center; /* Centra el texto motivacional */
+}
+
+.image-welcome {
+    flex: 1; /* Ocupa una proporción igual de espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo de esta columna */
+    text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.image-welcome img {
+    max-width: 100%; /* Hace que la imagen sea adaptable */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.message-welcome h2 {
+    color: #CCA43B;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.message-welcome p {
+    margin-top: 25px;
+    color: #E5E5E5;
+    font-size: 20px;
+}
+
+.message-welcome a {
+    display: inline-block; /* Convierte el enlace en un bloque */
+    margin-top: 25px;
+    padding: 10px 20px; /* Añade espacio interior al enlace */
+    background-color: #CCA43B;
+    color: #242F40;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.message-welcome h3 {
+    color: #CCA43B;
+    font-size: 30px; /* Tamaño de fuente reducido para diferenciarlo del título principal */
+    font-weight: bold;
+    text-align: center;
+    font-style: italic; /* Estilo cursivo para destacar la frase */
+    margin-top: 20px; /* Espaciado superior adicional */
+}
+
+.cursos-niveles {
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    align-items: center; /* Centra los cuadros verticalmente */
+    gap: 160px; /* Espaciado entre los cuadros */
+    height: 500px; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.inicial, .intermedio, .avanzado {
+    height: 400px;
+    max-height: 500px;
+    width: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 1); /* Sombra para el texto */
+    color:white;
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Asegura que los elementos se coloquen en una columna (título y mensaje) */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    border-radius: 15px;
+    text-align: center; /* Centra el texto */
+    transition: transform 0.3s;
+}
+
+.inicial:hover, .intermedio:hover, .avanzado:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+}
+
+.inicial h2, .intermedio h2, .avanzado h2 {
+    color: #CCA43B;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Añade espacio entre el título y el mensaje */
+}
+
+.inicial p, .intermedio p, .avanzado p {
+    font-size: 20px;
+    background-color: #242F40;
+    
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.link-cursos {
+    text-decoration: none;
+}
+
+footer{
+    background-color: #E5E5E5;
+}
+
+.redes a {
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    font-size: 2rem; /* Tamaño de los íconos */
+    color: #333; /* Color de los íconos */
+    text-decoration: none; /* Elimina subrayado */
+}
+  
+.redes a:hover {
+    color: #0077b5; /* Cambia el color al pasar el mouse */  
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-bottom{
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative; /* Permite posicionar el menú desplegable dentro del contenedor */
+}
+
+.dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #E5E5E5;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10; /* Asegura que esté sobre otros elementos */
+    opacity: 0; /* Invisibilidad inicial para evitar errores de renderizado */
+    transition: opacity 0.3s ease-in-out; /* Transición suave al mostrar */
+}
+
+.dropdown-menu li {
+    padding: 10px 20px; /* Espaciado interior de cada elemento */
+}
+
+.dropdown-menu li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #CCA43B; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    display: block; /* Hace que los enlaces ocupen toda la fila */
+}
+
+.dropdown-menu li:hover {
+    background-color: #242F40; /* Color de fondo al pasar el ratón */
+    color: #E5E5E5; /* Color del texto al pasar el ratón */
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Hace que el menú sea visible al pasar el ratón sobre el contenedor */
+    display: block; /* Muestra el menú al pasar el ratón sobre el contenedor */
+}

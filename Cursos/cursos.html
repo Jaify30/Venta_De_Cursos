@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef6bedbd3e.js" crossorigin="anonymous"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="cursos-styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Cursos | CurDev</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container-header">
+            <h1 class="header-name">CurDev</h1>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li><a class="nav-item" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-item" href="#">Cursos</a></li>
+                    <li class="dropdown">
+                        <a class="nav-item dropdown-toggle" href="#"><i class="fa-regular fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../IniciarSesion/InicioSesion.html">Iniciar sesión</a></li>
+                            <li><a href="../Registro/registro.html">Registrarse</a></li>
+                            <li><a href="#">Mis cursos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container-main">
+        <div class="message">
+            <h1>¡Bienvenido a CurDev!</h1>
+            <p>Encuentra los mejores cursos de programación en un solo lugar.</p>
+        </div>
+
+        <div class="cursos">
+            <aside class="filtros">
+
+                <div class="buscador">
+                    <input type="text" name="buscador" id="buscador" placeholder="Buscar curso...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <br><br>
+                <h2>Filtros</h2>
+                
+                <label for="Desarrollo-web">
+                    <input type="checkbox" value="Desarrollo-web" name="filtro" id="Desarrollo-web">Desarrollo Web
+                </label>
+                <br>
+                <label for="Desarrollo-movil">
+                    <input type="checkbox" value="Desarrollo-movil" name="filtro" id="Desarrollo-movil">Desarrollo Móvil
+                </label>
+                <br>
+                <label for="Inteligencia-artificial">
+                    <input type="checkbox" value="Inteligencia-artificial" name="filtro" id="Inteligencia-artificial">Inteligencia Artificial
+                </label>
+                <br>
+                <label for="Desarrollo-videojuegos">
+                    <input type="checkbox" value="Desarrollo-videojuegos" name="filtro" id="Desarrollo-videojuegos">Desarrollo de Videojuegos
+                </label>
+                <br>
+                <label for="Desarrollo-software">
+                    <input type="checkbox" value="Desarrollo-software" name="filtro" id="Desarrollo-software">Desarrollo de Software
+                </label>
+                <br>
+                <label for="Bases-de-datos">
+                    <input type="checkbox" value="Bases-de-datos" name="filtro" id="Bases-de-datos">Bases de Datos
+                </label>
+                <br>
+                <label for="Seguridad-informatica">
+                    <input type="checkbox" value="Seguridad-informatica" name="filtro" id="Seguridad-informatica">Seguridad Informática
+                </label>
+                <br>
+                <label for="redes">
+                    <input type="checkbox" value="redes" name="filtro" id="redes">Redes
+                </label>
+                <br><br><br>
+                <h2>Niveles</h2>
+                
+                <label for="Inicial">
+                    <input type="checkbox" value="Inicial" name="filtro" id="Inicial">Inicial
+                </label>
+                <br>
+                <label for="Intermedio">
+                    <input type="checkbox" value="Intermedio" name="filtro" id="Intermedio">Intermedio
+                </label>
+                <br>
+                <label for="Avanzado">
+                    <input type="checkbox" value="Avanzado" name="filtro" id="Avanzado">Avanzado
+                </label>
+            </aside>
+
+            <section class="cursos-cards">
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; max-height: 400px;">
+                    <img src="../images/what-is-a-programming-language.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Desarrollo Web</h5>
+                      <h6 class="nivel">Nivel Inicial</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Ir al curso</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="redes">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 JaifyDev. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
